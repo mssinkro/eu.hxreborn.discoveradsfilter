@@ -1,11 +1,14 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_dark.png">
-  <img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_light.png" alt="Discover Feed Filter" width="640">
-</picture>
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_dark.png">
+    <img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/assets/banner_light.png" alt="Discover Feed Filter">
+  </picture>
+</h1>
 
 <p>An Xposed module that removes ads, sponsored cards and clickbait from the Google Discover feed, in the Pixel Launcher -1 screen and inside the Google app itself. Hide stories by headline or source with your own filters, and share articles with their real link instead of Google's redirect.</p>
+
 
 <img src="https://img.shields.io/badge/Android-11%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 11+">
 <img src="https://img.shields.io/badge/libxposed-API_101%2B-ff69b4?style=for-the-badge" alt="libxposed API 101+">
@@ -32,8 +35,9 @@
 
 Starter filters you can import from News filters, menu, Import:
 
-- [clickbait-en.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-en.json), general English clickbait
+- [clickbait-en.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-en.json), general English clickbait, the same set as the in-app presets but switched on
 - [clickbait-es.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-es.json), general Spanish clickbait
+- [clickbait-de.json](https://github.com/hxreborn/discover-ads-filter/blob/main/presets/clickbait-de.json), general German clickbait, contributed by [@hanschke](https://github.com/hanschke)
 
 Clickbait looks different in every language. If yours is missing, open a PR with a pack and I'll include it.
 
@@ -43,10 +47,10 @@ The app scans the installed Google App with DexKit, resolving hook targets via p
 
 ## Related
 
-Also dislike ads in the Google Play Store? Try [playstore-adblock](https://github.com/hxreborn/playstore-adblock), a sister module.
+Also dislike ads in the Google Play Store? Try <a href="https://github.com/hxreborn/playstore-adblock"><img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/.github/assets/playstore-adblock.png" height="16" alt=""> playstore-adblock</a>, a sister module.
 
 ## License
 
 <a href="https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/hxreborn/discover-ads-filter/main/.github/assets/gplv3.svg" height="90" alt="GPLv3" /></a>
 
-This project is licensed under the GNU General Public License v3.0.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/hxreborn/discover-ads-filter/blob/main/LICENSE) for details.
