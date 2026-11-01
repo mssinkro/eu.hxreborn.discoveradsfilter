@@ -1,0 +1,146 @@
+[
+  {
+    "id": "preset-ai-hype",
+    "label": "L'IA vient de tuer X",
+    "pattern": "(chatgpt|claude|gemini|copilot|openai|l['’]ia)\\b.{0,40}\\b(vient de tuer|a tu[ée]|signe la fin|remplace|enterre|c['’]est fini)",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-declared-dead",
+    "label": "X est mort",
+    "pattern": "\\b((java|python|le seo|l['’]e-?mail|les mots de passe|le web|les blogs|google) est mort|la fin de (java|python|google|windows|l['’]e-?mail))\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-listicle",
+    "label": "Tops et listes",
+    "pattern": "^(ces |les |top )?\\d+ (choses|raisons|fa[çc]ons|signes|faits|astuces|habitudes|aliments|erreurs|conseils)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-experts-say",
+    "label": "Les experts disent",
+    "pattern": "\\b(experts?|scientifiques?|m[ée]decins?|nutritionnistes?|chercheurs?)\\b.{0,25}\\b(affirment|r[ée]v[èe]lent|alertent|mettent en garde|formels|sous le choc|unanimes|expliquent)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-curiosity-gap",
+    "label": "La suite va vous surprendre",
+    "pattern": "(ce qui s['’]est pass[ée] ensuite|la raison va vous surprendre|et ce n['’]est pas ce que vous (pensez|croyez)|personne ne l['’]avait vu venir|voici pourquoi|vous allez [êe]tre surpris)",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-farewell",
+    "label": "Dites adieu à X",
+    "pattern": "^(adieu|dites adieu (au|à la|aux|à)|c['’]est la fin (du|de la|des|de))\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-official-claim",
+    "label": "C'est officiel",
+    "pattern": "(c['’]est officiel|officiellement confirm[ée]|c['’]est d[ée]sormais officiel|confirm[ée] par (l['’]ue|le gouvernement|l['’][ée]tat))",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-secret-trick",
+    "label": "Astuce secrète / Fonction cachée",
+    "pattern": "\\b(fonction(nalit[ée])?|astuce|param[èe]tre|r[ée]glage|bouton|menu|code|raison)s? (secr[èe]te?s?|cach[ée]e?s?|m[ée]connue?s?|miracles?)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-doing-it-wrong",
+    "label": "Vous le faites mal depuis toujours",
+    "pattern": "(vous .{0,25} mal depuis toujours|l['’]erreur que tout le monde fait|vous vous trompez depuis|ne faites plus jamais [çc]a)",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-urgent-prefix",
+    "label": "Préfixes d'urgence",
+    "pattern": "^(attention|urgent|alerte|alerte info|flash|important|mauvaise nouvelle) ?[:!]",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-money-bait",
+    "label": "Sommes d'argent dans le titre",
+    "pattern": "(\\d{2,} ?[€$£]|[€$£] ?\\d{2,}|\\b(\\d{2,}|milliers d['’]|centaines d['’]) ?(euros|dollars)\\b)",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-tabloid",
+    "label": "Drames et presse people",
+    "pattern": "\\b(brise le silence|sort du silence|se confie sur|Atomise|recadre|s[èe]me l['’]inqui[ée]tude|inqui[èe]te ses fans|en larmes|au plus mal|fait pol[ée]mique)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-viral-bait",
+    "label": "Buzz et viralité",
+    "pattern": "\\b(devient viral|affole la toile|enflamme la toile|laisse les internautes sans voix|fait le buzz|tout le monde s['’]arrache)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-wont-believe",
+    "label": "Vous n'allez pas y croire",
+    "pattern": "(vous n['’]allez pas (y )?croire|impossible à croire|vous ne devinerez jamais)",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-hype-words",
+    "label": "Mots sensationnalistes",
+    "pattern": "(change la donne|hallucinant|coup de tonnerre|incroyable mais vrai|du jamais vu|r[ée]v[ée]lation choc|ce d[ée]tail qui tue)",
+    "action": "Block",
+    "scope": "Any",
+    "match": "Regex",
+    "enabled": true
+  },
+  {
+    "id": "preset-fr-promos",
+    "label": "Bons plans et promos déguisées",
+    "pattern": "\\b(à prix cass[ée]|chute de prix|offre (folle|incroyable|à saisir)|bon plan|code promo|vente flash|moins cher que|à moins de)\\b",
+    "action": "Block",
+    "scope": "Headline",
+    "match": "Regex",
+    "enabled": true
+  }
+]
